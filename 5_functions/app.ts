@@ -88,3 +88,17 @@ function sumAll(...nums: number[]): number {
 
 console.log(sumAll(1, 2, 3, 4, 5)); // 15
 
+function greetAll(greeting: string, ...names: string[]): void {
+  names.forEach((name) => console.log(`${greeting}, ${name}`));
+}
+
+greetAll("Hello", "Alice", "Bob", "Charlie");
+// Output:
+// Hello, Alice
+// Hello, Bob
+// Hello, Charlie
+
+
+
+
+ 

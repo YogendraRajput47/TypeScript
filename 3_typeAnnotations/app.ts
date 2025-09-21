@@ -43,7 +43,7 @@ let person: { name: string; age: number } = {
 // Array Annotations
 // ----------------
 let marks: number[] = [71, 82, 83];
-let fruits: string[] = ["Bananan","Mango","Orange"];
+let fruits: string[] = ["Banana","Mango","Orange"];
 
 // ----------------
 // Union Type Annotation (variable can hold more than one type)
