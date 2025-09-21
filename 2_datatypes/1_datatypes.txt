@@ -1,0 +1,82 @@
+1 — Quick context: what TypeScript does
+
+TypeScript is JavaScript + a static type system. Types run at compile time to catch bugs and document intent. At runtime it’s still plain JS.
+
+
+2 — Type annotations & type inference
+
+You can explicitly annotate or let TS infer:
+
+let a: number = 5;      // annotated
+let b = "hello";        // inferred as string
+
+
+// ================================
+// 📌 TypeScript Basic Types Summary
+// ================================
+
+// number
+let age: number = 25;
+let price: number = 99.99;
+
+// string
+let firstName: string = "John";
+let message: string = `Hello, my name is ${firstName}`;
+
+// boolean
+let isActive: boolean = true;
+let isCompleted: boolean = false;
+
+// null & undefined
+let nothing: null = null;
+let notAssigned: undefined = undefined;
+
+// any (⚠️ disables type safety)
+let randomValue: any = "Hello";
+randomValue = 10;
+randomValue = true;
+
+// unknown (✅ safer than any)
+let input: unknown = "TypeScript";
+if (typeof input === "string") {
+  console.log(input.toUpperCase());
+}
+
+// void (functions with no return value)
+function logMessage(): void {
+  console.log("This function returns nothing");
+}
+
+// never (functions that never return)
+function throwError(message: string): never {
+  throw new Error(message);
+}
+function infiniteLoop(): never {
+  while (true) {}
+}
+
+// object
+let person: object = { name: "Alice", age: 30 };
+
+// array
+let numbers: number[] = [1, 2, 3];
+let names: Array<string> = ["Alice", "Bob"];
+
+// ================================
+// 📌 Summary Table
+// ================================
+//
+// | Type      | Example                                 |
+// |-----------|-----------------------------------------|
+// | number    | let n: number = 10;                     |
+// | string    | let s: string = "hi";                   |
+// | boolean   | let b: boolean = true;                  |
+// | null      | let x: null = null;                     |
+// | undefined | let y: undefined;                       |
+// | any       | let a: any = 5;                         |
+// | unknown   | let u: unknown = "x";                   |
+// | void      | function f(): void {}                   |
+// | never     | function g(): never { throw new Error();}|
+// | object    | let obj: object = {};                   |
+// | array     | let arr: number[] = [];                 |
+//
