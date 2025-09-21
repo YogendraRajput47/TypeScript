@@ -1,0 +1,12 @@
+// ================================
+// 📌 Summary Table
+// ================================
+//
+// | Feature              | Example                                    |
+// |----------------------|--------------------------------------------|
+// | Variable Inference   | let x = 10;  // number                     |
+// | String Inference     | let name = "Bob"; // string                |
+// | Boolean Inference    | let isActive = true; // boolean            |
+// | Function Return      | function add(a: number, b: number) { return a+b } |
+// | Contextual Typing    | window.addEventListener("click", e => ...) |
+//
