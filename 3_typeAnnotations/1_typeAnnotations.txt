@@ -1,0 +1,13 @@
+// ================================
+// 📌 Summary Table
+// ================================
+//
+// | Use Case            | Example                                   |
+// |---------------------|-------------------------------------------|
+// | Variable            | let age: number = 25;                     |
+// | Function Parameter  | function greet(name: string): string {}   |
+// | Return Type         | function add(a: number, b: number): number|
+// | Object              | let p: { name: string; age: number } = {};|
+// | Array               | let arr: string[] = ["a", "b"];           |
+// | Union Types         | let id: string | number;                  |
+//
