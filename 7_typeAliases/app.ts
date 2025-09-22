@@ -6,15 +6,14 @@
 
 // They are very flexible and can be used for primitives, objects, unions, tuples, and functions.
 
-
 // ----------------
 // Alias for a Primitive Type
 // ----------------
 type ID = number | string; // ID can be number or string
 
 let userId: ID;
-userId = 101;       // ✅ valid
-userId = "abc123";  // ✅ valid
+userId = 101; // ✅ valid
+userId = "abc123"; // ✅ valid
 // userId = true;   // ❌ Error
 
 // ----------------
@@ -56,7 +55,6 @@ let currentStatus: Status;
 currentStatus = "success"; // ✅ valid
 // currentStatus = "failed"; // ❌ Error
 
-
 //Extending aliases// Base types
 type Person3 = {
   name: string;
@@ -78,8 +76,6 @@ const staffMember: Staff = {
   department: "HR",
 };
 
-
-
 // ================================
 // 📌 Summary Table
 // ================================
@@ -93,7 +89,6 @@ const staffMember: Staff = {
 // | Union Alias          | type Status = "success" | "error" | "pending" |
 //
 
-
 // Type Aliases vs Interfaces
 // | Feature                | Type Alias (type)                              | Interface (interface)                     |
 // |------------------------|-----------------------------------------------|------------------------------------------|
@@ -104,7 +99,6 @@ const staffMember: Staff = {
 // | Syntax                 | `type Name = string \| number;`               |                                          |
 // | Use case example       | Aliasing unions, function signatures, tuples  | Defining object/class structure           |
 
-
 // 🔹 When to use what
 // | Scenario                             | Recommended                                                              |
 // |-------------------------------------|--------------------------------------------------------------------------|
@@ -113,7 +107,6 @@ const staffMember: Staff = {
 // | Union types                          | Type Alias                                                                |
 // | Extending or merging multiple definitions | Interface                                                            |
 // | Reusable type for many shapes        | Depends on type: use type for unions/functions, interface for objects   |
-
 
 // 💡 Rule of Thumb:
 
